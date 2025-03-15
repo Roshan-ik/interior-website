@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Interiors & Furniture</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="icon" type="image/webp" href="https://i.postimg.cc/tJ9YGPt1/logo-2.webp">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1 style="font-family: Comic Sans MS; font-size: 40px;">Creative Interiors & Furniture</h1>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#artist">Artist</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url(https://i.postimg.cc/BQ7TXLdW/logo.webp);">
+        <div class="hero-content">
+            <h1 data-aos="fade-up" style="color: beige;font-size: 40px;">Transform Your Space</h1>
+            <h2 data-aos="fade-up" data-aos-dechatlay="200" style="color: beige; font-size: 30px;">Elevate Your Home With Stunning Interiors</h2>
+            <p data-aos="fade-up" data-aos-delay="400" style="color: beige; font-size: 20px;"><b></b>Where art meets functionality to create spaces that inspire</b></p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#products" class="btn-primary">Explore Collections</a>
+                <a href="#contact" class="btn-secondary">Get Consultation</a>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="font-size: 30px;" >Featured</span>
+                <h2 style="font-size: 50px;" >Our Signature Styles</h2>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item" data-aos="fade-up">
+                    <div class="featured-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Modern Minimalist</h3>
+                    <p>Modern minimalist designs crafted for functionality and elegance featuring sleek kitchens, stylish wardrobes, secure safety doors, smart study tables, sophisticated TV units, space-saving shoe racks, and comfortable beds.</p>
+                </div>
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Contemporary Classic</h3>
+                    <p>A perfect blend of timeless craftsmanship and modern aesthetics—elevating kitchens, wardrobes, safety doors, study tables, TV units, shoe racks, and beds with elegance and functionality.</p>                </div>
+                <div class="featured-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="featured-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Artistic Eclectic</h3>
+                    <p>A vibrant fusion of colors, textures, and creative designs—bringing personality and charm to kitchens, wardrobes, safety doors, study tables, TV units, shoe racks, and beds.</p>                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Section -->
+    <section id="artist" class="artist">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="font-size: 30px;" >The Artist</span>
+                <h2 style="font-size: 50px;" >Meet The Creative Mind</h2>
+            </div>
+            <div class="artist-content">
+                <div class="artist-image" data-aos="fade-right">
+                    <img src="https://i.postimg.cc/HsGWTRL6/Rahul-Jaiswar.jpg" alt="Interior Designer">
+                    <div class="experience-badge">
+                        <span>11+</span>
+                        <p style="font-size: 16px;">Years Experience</p>
+                    </div>
+                </div>
+                <div class="artist-info" data-aos="fade-left">
+                    <h3>Rahul Jaiswar</h3>
+                    <p class="artist-title">Head Designer</p>
+                    <p class="artist-bio">With over 11 years of experience transforming spaces, Rahul brings an unparalleled passion for interior design. Each project is approached with a blend of artistic vision and practical expertise, ensuring spaces that are not just beautiful but functional and meaningful.</p>
+                    <p class="artist-quote">"I believe every space tells a story. My mission is to help you tell yours through thoughtful design that reflects your personality and enhances your lifestyle."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="font-size: 30px;" >Our Products</span>
+                <h2 style="font-size: 50px;" >Curated Collections</h2>
+                <h1>To see more images related to the product, please click on the product</h1>
+            </div>
+            <div class="product-grid">
+                <div class="product-item" data-category="furniture" data-aos="fade-up">
+                    <div class="product-image" onclick="openModal(['https://i.postimg.cc/SxxsJPBC/kitchen1.jpg','https://i.postimg.cc/PJ76Y96J/kitchen2.jpg','https://i.postimg.cc/pVSkGNZX/kitchen3.jpg','https://i.postimg.cc/ZRRFHjvd/kitchen4.jpg','https://i.postimg.cc/ZRRFHjvd/kitchen4.jpg','https://i.postimg.cc/9fXn3dqW/kitchen6.jpg','https://i.postimg.cc/XYLsgr1t/kitchen7.jpg','https://i.postimg.cc/XYLsgr1t/kitchen7.jpg','https://i.postimg.cc/R0qLQXHn/kitchen9.jpg','https://i.postimg.cc/PJbWr7B0/kitchen10.jpg','https://i.postimg.cc/c4mRpV7n/kitchen11.jpg','https://i.postimg.cc/7LCSThF3/kitchen12.jpg','https://i.postimg.cc/7LCSThF3/kitchen12.jpg','https://i.postimg.cc/8Crrz3vw/kitchen13.jpg','https://i.postimg.cc/90c41QnN/kitchen14.jpg','https://i.postimg.cc/VNpCJVTR/kitchen16.jpg','https://i.postimg.cc/85LjjPLp/kitchen17.jpg','https://i.postimg.cc/85LjjPLp/kitchen17.jpg','https://i.postimg.cc/vByG276y/kitchen19.jpg','https://i.postimg.cc/nrcppHkw/kitchen20.jpg','https://i.postimg.cc/3xLwgQCP/kitchen1.jpg','https://i.postimg.cc/3J1rTQ6d/kitchen2.jpg','https://i.postimg.cc/CLc02HB8/kitchen3.jpg','https://i.postimg.cc/bvtjd760/kitchen4.jpg','https://i.postimg.cc/Y0pcnht8/kitchen5.jpg','https://i.postimg.cc/hPtWVzyt/kitchen6.jpg','https://i.postimg.cc/DwR9VC2S/kitchen7.jpg','https://i.postimg.cc/6qHPMcj5/kitchen8.jpg','https://i.postimg.cc/BnPzCxx4/kitchen9.jpg','https://i.postimg.cc/BnPzCxx4/kitchen9.jpg','https://i.postimg.cc/GpkSWd7f/kitchen10.jpg','https://i.postimg.cc/hv3CLjvX/kitchen11.jpg','https://i.postimg.cc/cC9VhyFD/kitchen1.jpg','https://i.postimg.cc/5NrhFJYy/kitchen2.jpg','https://i.postimg.cc/1tMTR119/kitchen3.jpg','https://i.postimg.cc/DfjDthc6/kitchen4.jpg','https://i.postimg.cc/g0Ht4bJv/kitchen5.jpg','https://i.postimg.cc/L5wxhHCM/kitchen6.jpg','https://i.postimg.cc/dQxH5BqS/kitchen7.jpg','https://i.postimg.cc/YCcXHCL6/kitchen8.jpg','https://i.postimg.cc/pLDsXMKg/kitchen9.jpg','https://i.postimg.cc/6QtY8b0T/kitchen10.jpg','https://i.postimg.cc/RhkT4ghS/kitchen1.jpg','https://i.postimg.cc/RCW5Cqhy/kitchen2.jpg','https://i.postimg.cc/DyQC7KrR/kitchen3.jpg','https://i.postimg.cc/rw8fmYgs/kitchen4.jpg','https://i.postimg.cc/T3CCWqH9/kitchen5.jpg','https://i.postimg.cc/mrkV3zvG/kitchen6.jpg','https://i.postimg.cc/4yk5T8mJ/kitchen7.jpg','https://i.postimg.cc/0jYC5pw7/kitchen8.jpg','https://i.postimg.cc/NGmDxwzL/kitchen9.jpg','https://i.postimg.cc/J48q6dfx/kitchen10.jpg','https://i.postimg.cc/Pq0bm6bm/kitchen1.jpg','https://i.postimg.cc/gjWv7nTj/kitchen2.jpg','https://i.postimg.cc/90YGHC6p/kitchen3.jpg','https://i.postimg.cc/FFybLVYL/kitchen4.jpg','https://i.postimg.cc/jdRHQnfk/kitchen5.jpg','https://i.postimg.cc/t4TF8023/kitchen6.jpg','https://i.postimg.cc/pL6KH06g/kitchen7.jpg',])">
+                        <img src="https://i.postimg.cc/7LCSThF3/kitchen12.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kitchen</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-category="lighting" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image" onclick="openModal(['https://i.postimg.cc/HsPrcr9M/wardrobe1.jpg', 'https://i.postimg.cc/nhyM2N5c/wardrobe2.jpg', 'https://i.postimg.cc/k49G3Kq0/wardrobe3.jpg','https://i.postimg.cc/sxg21zBK/wardrobe4.jpg','https://i.postimg.cc/Kjp8MWBb/wardrobe5.jpg','https://i.postimg.cc/XNsJmrhP/wardrobe6.jpg','https://i.postimg.cc/Gh92Ccnm/wardrobe7.jpg','https://i.postimg.cc/yY5N6w7X/wardrobe8.jpg','https://i.postimg.cc/YSBqYYGv/wardrobe9.jpg','https://i.postimg.cc/CKCMN5km/wardrobe10.jpg','https://i.postimg.cc/1Xdytq15/wardrobe1.jpg','https://i.postimg.cc/BZ7SNdP9/wardrobe2.jpg','https://i.postimg.cc/Qd1j8C4h/wardrobe3.jpg','https://i.postimg.cc/0Q2v0f8y/wardrobe4.jpg','https://i.postimg.cc/RhWzjZJr/wardrobe5.jpg','https://i.postimg.cc/nVWxqBNn/wardrobe6.jpg','https://i.postimg.cc/t43H0fJg/wardrobe7.jpg','https://i.postimg.cc/fb5ny9xn/wardrobe8.jpg','https://i.postimg.cc/500cC23H/wardrobe9.jpg','https://i.postimg.cc/FFwRNMrb/wardrobe10.jpg','https://i.postimg.cc/rmKVLJ7Y/wardrobe1.jpg','https://i.postimg.cc/B6kqZF0Z/wardrobe2.jpg','https://i.postimg.cc/sfGj6TYM/wardrobe3.jpg','https://i.postimg.cc/ZqqZrHYK/wardrobe4.jpg','https://i.postimg.cc/rFLkhMyH/wardrobe5.jpg','https://i.postimg.cc/jdQrmmLS/wardrobe6.jpg','https://i.postimg.cc/3x8HT1vC/wardrobe7.jpg',])">
+                        <img src="https://i.postimg.cc/s28F5R0w/main.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wardrobe<h3>
+                    </div>
+                </div>
+                <div class="product-item" data-category="decor" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image" onclick="openModal(['https://i.postimg.cc/ZqXgCxCQ/door1.jpg', 'https://i.postimg.cc/B6DzDPFn/door2.jpg', 'https://i.postimg.cc/qqxZDfjf/door3.jpg', 'https://i.postimg.cc/L6mWYX8m/door4.jpg', 'https://i.postimg.cc/bNLBQhZk/door5.jpg', 'https://i.postimg.cc/P5xFyRDc/door6.jpg', 'https://i.postimg.cc/RZDpDLQ0/door7.jpg', 'https://i.postimg.cc/bvSVcS39/door8.jpg', 'https://i.postimg.cc/rm6n8yHX/door9.jpg','https://i.postimg.cc/LXzyhKdq/door10.jpg', 'https://i.postimg.cc/Xq4sCH3s/door11.jpg', 'https://i.postimg.cc/PJy2zW5T/door12.jpg', 'https://i.postimg.cc/656H6mM3/door14.jpg', 'https://i.postimg.cc/zGV0KRZY/door15.jpg', 'https://i.postimg.cc/qvSQLM4h/door313.jpg', ])">
+                        <img src="https://i.postimg.cc/L6mWYX8m/door4.jpg" >
+                    </div>
+                    <div class="product-info">
+                        <h3>Safety doors</h3>
+                        <div class="product-price">                        </div>
+                    </div>
+                </div>
+                <div class="product-item" data-category="textiles" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image" onclick="openModal(['https://i.postimg.cc/HW6wzstY/table1.jpg', 'https://i.postimg.cc/pXyD6b0D/table2.jpg', 'https://i.postimg.cc/3xv23jQN/table3.jpg', 'https://i.postimg.cc/xdVM8k9R/table4.jpg', 'https://i.postimg.cc/1z06q9tZ/table5.jpg', 'https://i.postimg.cc/8ccr9Mb1/table6.jpg', 'https://i.postimg.cc/59KzvKxj/table7.jpg', 'https://i.postimg.cc/W1gqB20J/table8.jpg', 'https://i.postimg.cc/fbsSZ6vq/table9.jpg', 'https://i.postimg.cc/R0T60XsS/table10.jpg', 'https://i.postimg.cc/cH9vR6GP/table11.jpg', 'https://i.postimg.cc/PJCP2htJ/table12.jpg', 'https://i.postimg.cc/2jtq3qwZ/table13.jpg', 'https://i.postimg.cc/15N8F9CY/table14.jpg', 'https://i.postimg.cc/CxTzHW9M/table15.jpg', 'https://i.postimg.cc/fbsSZ6vq/table9.jpg', 'https://i.postimg.cc/cH9vR6GP/table11.jpg', 'https://i.postimg.cc/PJCP2htJ/table12.jpg', 'https://i.postimg.cc/15N8F9CY/table14.jpg', 'https://i.postimg.cc/CxTzHW9M/table15.jpg', 'https://i.postimg.cc/XNrf2619/table17.jpg', 'https://i.postimg.cc/NfhHp9Hw/table18.jpg', 'https://i.postimg.cc/XY4y6RLH/table19.jpg', 'https://i.postimg.cc/FHpkrTn9/table20.jpg',])">
+                        <img src="https://i.postimg.cc/HW6wzstY/table1.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Study Table</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-category="furniture" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image" onclick="openModal(['https://i.postimg.cc/jdrDyppx/tv1.jpg', 'https://i.postimg.cc/GhJHKMRk/tv2.jpg', 'https://i.postimg.cc/DwvmMqfR/tv3.jpg', 'https://i.postimg.cc/2S03RVVy/tv4.jpg','https://i.postimg.cc/Jht01Mkq/tv5.jpg', 'https://i.postimg.cc/0j1ydSHW/tv6.jpg', 'https://i.postimg.cc/BZ26ZhXd/tv7.jpg', 'https://i.postimg.cc/HsHLrQMj/tv8.jpg', 'https://i.postimg.cc/8PHzMjd4/tv9.jpg', 'https://i.postimg.cc/zG2D26cR/tv10.jpg', 'https://i.postimg.cc/mr0LBMRL/tv21.jpg', 'https://i.postimg.cc/XJdVJJ7w/tv22.jpg', 'https://i.postimg.cc/tJb9VjY8/tv23.jpg', 'https://i.postimg.cc/gcyzbn7p/tv24.jpg', 'https://i.postimg.cc/Jz0MXKz7/tv25.jpg', 'https://i.postimg.cc/K8WFDL1P/tv26.jpg', 'https://i.postimg.cc/zBZr9rS3/tv27.jpg', 'https://i.postimg.cc/pTfHv6qC/tv28.jpg', 'https://i.postimg.cc/7hqyZnRk/tv29.jpg', 'https://i.postimg.cc/T3LBGsPb/tv1.jpg', 'https://i.postimg.cc/vZJkmv1N/tv2.jpg', 'https://i.postimg.cc/VvkHhGTd/tv3.jpg', 'https://i.postimg.cc/2j0tWYbv/tv4.jpg', 'https://i.postimg.cc/2j0tWYbv/tv4.jpg', 'https://i.postimg.cc/5NjRqrLr/tv8.jpg', 'https://i.postimg.cc/9FSNxBBQ/tv9.jpg', 'https://i.postimg.cc/NjHCZrN7/tv10.jpg', 'https://i.postimg.cc/Bv5Ynffj/tv12.jpg', 'https://i.postimg.cc/76xBCtqm/tv13.jpg', 'https://i.postimg.cc/KzJ0t7zF/tv14.jpg', 'https://i.postimg.cc/gjjNswXh/tv15.jpg', 'https://i.postimg.cc/VLSKbCcQ/tv16.jpg', 'https://i.postimg.cc/XYdxs6Js/tv18.jpg', 'https://i.postimg.cc/TPx0SN5f/tv19.jpg', 'https://i.postimg.cc/6QhcNVCR/tv20.jpg', 'https://i.postimg.cc/bJNTYGR5/tv111.jpg',])">
+                        <img src="https://i.postimg.cc/T3LBGsPb/tv1.jpg" >
+                    </div>
+                    <div class="product-info">
+                        <h3>T.V unit</h3>
+                    </div>
+                </div>
+                <div class="product-item" data-category="decor" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-image" onclick="openModal(['https://i.postimg.cc/jjR6vWBj/bed2.jpg', 'https://i.postimg.cc/7LX3RHyn/bed3.jpg', 'https://i.postimg.cc/7LX3RHyn/bed3.jpg', 'https://i.postimg.cc/3RcgKtNy/bed5.jpg', 'https://i.postimg.cc/kGRWDWRT/bed6.jpg', 'https://i.postimg.cc/wx1rDPhG/bed7.jpg', 'https://i.postimg.cc/ZYXMHcHK/bed8.jpg', 'https://i.postimg.cc/156Yjq70/bed9.jpg', 'https://i.postimg.cc/fRfqwhNJ/bed11.jpg', 'https://i.postimg.cc/hG4yv3DM/bed12.jpg', 'https://i.postimg.cc/tgrrxt7b/bed13.jpg', 'https://i.postimg.cc/G2HXJ8sy/bed15.jpg', 'https://i.postimg.cc/G2VqMLkS/bed16.jpg', 'https://i.postimg.cc/nV9dXmx8/bed17.jpg', 'https://i.postimg.cc/dVwnNSyv/bed18.jpg', 'https://i.postimg.cc/8z442BRv/bedq.jpg', 'https://i.postimg.cc/9fNpMmNF/bed14.jpg',])">
+                        <img src="https://i.postimg.cc/G2HXJ8sy/bed15.jpg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bed</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" style="font-size: 30px;" >Get In Touch</span>
+                <h2 style="font-size: 50px;" >Contact Us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>Laxmi Nagar,<br>Vijay villas road,G.B road <br>thane-400615</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+91 9867698041</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>creativeinteriorfurniture@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Mon - Fri: 10:00 AM - 9:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links" style="font-size: 30px;">
+                        <a href="https://www.instagram.com/creative_interior_furniture/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-logo">
+                        <h2>Creative<span> Interior & Furniture</span></h2>
+                        <p>Transforming spaces into extraordinary experiences through thoughtful design and meticulous attention to detail.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#artist">About the Artist</a></li>
+                            <li><a href="#products">Our Products</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="#">Residential Design</a></li>
+                            <li><a href="#">Commercial Spaces</a></li>
+                            <li><a href="#">Custom Furniture</a></li>
+                            <li><a href="#">Color Consultation</a></li>
+                            <li><a href="#">Space Planning</a></li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container8">
+                <p>&copy; 2025 Creative Interior Furniture. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Preloader
+            setTimeout(function() {
+                $('.preloader').fadeOut(500);
+            }, 1000);
+
+            // Custom cursor
+            $(document).mousemove(function(e) {
+                $('.cursor').css({
+                    left: e.pageX,
+                    top: e.pageY
+                });
+                
+                setTimeout(function() {
+                    $('.cursor-follower').css({
+                        left: e.pageX,
+                        top: e.pageY
+                    });
+                }, 100);
+            });
+
+            $('a, button').hover(
+                function() {
+                    $('.cursor').addClass('active');
+                    $('.cursor-follower').addClass('active');
+                },
+                function() {
+                    $('.cursor').removeClass('active');
+                    $('.cursor-follower').removeClass('active');
+                }
+            );
+
+            // Mobile Menu Toggle
+            $('.menu-toggle').click(function() {
+                $(this).toggleClass('active');
+                $('nav').toggleClass('active');
+            });
+
+            // Smooth scrolling for nav links
+            $('a[href*="#"]').on('click', function(e) {
+                e.preventDefault();
+                
+                $('html, body').animate(
+                    {
+                        scrollTop: $($(this).attr('href')).offset().top - 70
+                    },
+                    500,
+                    'linear'
+                );
+            });
+
+            // Active nav link on scroll
+            $(window).scroll(function() {
+                var scrollDistance = $(window).scrollTop() + 100;
+                
+                $('section').each(function(i) {
+                    if ($(this).position().top <= scrollDistance) {
+                        $('.nav-links a.active').removeClass('active');
+                        $('.nav-links a').eq(i).addClass('active');
+                    }
+                });
+            }).scroll();
+
+            // Product filter
+            $('.filter-btn').click(function() {
+                var filterValue = $(this).attr('data-filter');
+                
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                if (filterValue === 'all') {
+                    $('.product-item').show(300);
+                } else {
+                    $('.product-item').hide(300);
+                    $('.product-item[data-category="' + filterValue + '"]').show(300);
+                }
+            });
+
+            // Testimonial slider
+            $('.next-btn').click(function() {
+                var currentItem = $('.testimonial-item.active');
+                var nextItem = currentItem.next('.testimonial-item');
+                var currentDot = $('.dot.active');
+                var nextDot = currentDot.next('.dot');
+                
+                if (nextItem.length === 0) {
+                    nextItem = $('.testimonial-item').first();
+                    nextDot = $('.dot').first();
+                }
+                
+                currentItem.removeClass('active');
+                nextItem.addClass('active');
+                currentDot.removeClass('active');
+                nextDot.addClass('active');
+            });
+            
+            $('.prev-btn').click(function() {
+                var currentItem = $('.testimonial-item.active');
+                var prevItem = currentItem.prev('.testimonial-item');
+                var currentDot = $('.dot.active');
+                var prevDot = currentDot.prev('.dot');
+                
+                if (prevItem.length === 0) {
+                    prevItem = $('.testimonial-item').last();
+                    prevDot = $('.dot').last();
+                }
+                
+                currentItem.removeClass('active');
+                prevItem.addClass('active');
+                currentDot.removeClass('active');
+                prevDot.addClass('active');
+            });
+            
+            $('.dot').click(function() {
+                var index = $(this).index();
+                
+                $('.testimonial-item').removeClass('active');
+                $('.testimonial-item').eq(index).addClass('active');
+                $('.dot').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Auto testimonial slider
+            setInterval(function() {
+                $('.next-btn').click();
+            }, 5000);
+        });
+    </script>
+    <script src="animations.js"></script>  
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Product Image">
+            <div class="modal-nav">
+                <button onclick="prevImage()">❮</button>
+                <button onclick="nextImage()">❯</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
