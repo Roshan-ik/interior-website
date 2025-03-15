@@ -328,13 +328,15 @@
     padding: 100px 0;
 }
 
+/* Ensure the background scales properly on smaller screens */
 @media (max-width: 768px) {
     .hero {
-        background-size: cover;
-        background-position: center;
-        padding: 80px 20px;
-        text-align: center;
+        background-size: contain; /* Ensures the whole image is visible */
+        background-position: center center;
+        background-repeat: no-repeat;
     }
+}
+
     
     .hero-content {
         width: 100%;
