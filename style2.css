@@ -313,50 +313,46 @@
    /* ==================== 
       Hero Section
       ==================== */
-      @media (max-width: 768px) {
-        /* Other styles... */
-        
-        .hero {
-            height: auto; /* Allow it to extend as needed */
-            min-height: 100vh;
-        }
-        
-        .hero-content, 
-        .hero-image {
-            width: 100%;
-            padding: 20px 0;
-        }
-        
-        /* Prevent horizontal scrolling */
-        .container {
-            overflow-x: hidden;
-        }
-        
-        body {
-            overflow-x: hidden;
-            width: 100%;
-        }
+    /* Hero Section Background Image Fix */
+.hero {
+    background-image: url(https://i.postimg.cc/BQ7TXLdW/logo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px;
+        text-align: center;
     }
-   
-   .hero-content h1 {
-       font-size: 54px;
-       font-weight: 700;
-       margin-bottom: 20px;
-       color: var(--primary-color);
-   }
-   
-   .hero-content h2 {
-       font-size: 24px;
-       font-weight: 400;
-       margin-bottom: 30px;
-       color: var(--light-text);
-   }
-   
-   .hero-content p {
-       font-size: 18px;
-       margin-bottom: 40px;
-   }
-   
+    
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .hero-content h1 {
+        font-size: 50px !important;
+    }
+    
+    .hero-content h2 {
+        font-size: 34px !important;
+    }
+    
+    .hero-content p {
+        font-size: 28px !important;
+    }
+}
    .hero-buttons {
        display: flex;
        gap: 20px;
